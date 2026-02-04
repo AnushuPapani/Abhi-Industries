@@ -3,37 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="ABHI INDUSTRIES is an FSSAI-approved packaged drinking water manufacturer in Warangal, Telangana. Brand: VISWA. 250ml, 500ml, 1L bottles & 20L cans. Call/WhatsApp: 9160309475." />
-  <title>ABHI INDUSTRIES | Packaged Drinking Water (VISWA) | Warangal</title>
+  <meta name="description" content="ABHI INDUSTRIES (Warangal) manufactures VISWA packaged drinking water. FSSAI approved. 250ml, 500ml, 1L bottles. Call/WhatsApp 9160309475." />
+  <title>ABHI INDUSTRIES | VISWA Packaged Drinking Water</title>
 
   <style>
     :root{
-      --bg:#0b1220;
-      --card:#0f1a33;
-      --text:#eaf0ff;
-      --muted:#b9c6ea;
-      --accent:#7c3aed;
-      --accent2:#fbbf24;
-      --line:rgba(255,255,255,.10);
-      --max:1100px;
+      --bg1:#e8f7ff;
+      --bg2:#fff3e6;
+      --ink:#0b1220;
+      --muted:#3b4a6b;
+      --card:#ffffff;
+      --line:rgba(11,18,32,.10);
+      --p:#2563eb;   /* blue */
+      --p2:#7c3aed;  /* purple */
+      --a:#f59e0b;   /* amber */
+      --g:#22c55e;   /* green */
       --r:18px;
+      --max:1100px;
     }
+
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background: radial-gradient(1200px 600px at 10% 0%, rgba(124,58,237,.25), transparent 60%),
-                  radial-gradient(900px 500px at 90% 20%, rgba(251,191,36,.18), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-      line-height:1.5;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(900px 520px at 10% 0%, rgba(37,99,235,.22), transparent 55%),
+        radial-gradient(900px 520px at 90% 20%, rgba(124,58,237,.18), transparent 55%),
+        linear-gradient(120deg, var(--bg1), var(--bg2));
     }
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+
+    /* top bar */
     .topbar{
       position:sticky; top:0; z-index:50;
       backdrop-filter: blur(10px);
-      background: rgba(11,18,32,.55);
+      background: rgba(255,255,255,.65);
       border-bottom:1px solid var(--line);
     }
     .nav{
@@ -41,205 +47,192 @@
       padding:12px 0;
       gap:12px;
     }
-    .brand{
-      display:flex; flex-direction:column; gap:2px;
+    .brand b{letter-spacing:.4px;font-size:16px}
+    .brand small{display:block;color:var(--muted);margin-top:2px}
+    .menu{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
+    .menu a{
+      font-size:14px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid transparent;
+      color:var(--muted);
     }
-    .brand b{letter-spacing:.4px}
-    .brand small{color:var(--muted)}
-    .menu{
-      display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end;
-      font-size:14px; color:var(--muted);
-    }
-    .menu a{padding:8px 10px;border-radius:999px}
-    .menu a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+    .menu a:hover{background:rgba(37,99,235,.08);border-color:rgba(37,99,235,.12);color:var(--ink)}
+
+    /* hero */
+    header{padding:44px 0 10px}
     .hero{
-      padding:54px 0 28px;
-    }
-    .heroGrid{
-      display:grid; grid-template-columns: 1.2fr .8fr; gap:18px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
       align-items:stretch;
     }
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      background: var(--card);
       border:1px solid var(--line);
       border-radius: var(--r);
-      padding:22px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      padding:20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.08);
     }
-    h1{margin:0 0 10px;font-size:40px;line-height:1.1}
-    .tagline{color:var(--muted);font-size:16px;margin:0 0 18px}
-    .pillRow{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+    h1{margin:0 0 10px;font-size:40px;line-height:1.12}
+    .tag{margin:0;color:var(--muted);font-size:16px}
+    .pillRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
     .pill{
+      padding:8px 10px;border-radius:999px;
       border:1px solid var(--line);
-      background:rgba(255,255,255,.04);
+      background: linear-gradient(135deg, rgba(37,99,235,.08), rgba(124,58,237,.06));
       color:var(--muted);
-      padding:8px 10px;
-      border-radius:999px;
       font-size:13px;
     }
-    .btnRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+
+    .btnRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
     .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:11px 14px;
-      border-radius:12px;
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:11px 14px;border-radius:12px;
       border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
-      font-weight:600;
+      background:rgba(255,255,255,.9);
+      font-weight:700;
     }
-    .btn:hover{background:rgba(255,255,255,.10)}
+    .btn:hover{filter:brightness(1.02)}
     .btn.primary{
-      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(124,58,237,.55));
-      border-color: rgba(124,58,237,.65);
+      background: linear-gradient(135deg, rgba(37,99,235,.95), rgba(124,58,237,.75));
+      color:#fff;border-color:rgba(37,99,235,.25);
     }
-    .btn.primary:hover{filter:brightness(1.07)}
-    .btn.accent{
-      background: linear-gradient(135deg, rgba(251,191,36,.95), rgba(251,191,36,.45));
-      border-color: rgba(251,191,36,.65);
-      color:#1b1202;
+    .btn.whatsapp{
+      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(34,197,94,.70));
+      color:#06250f;border-color:rgba(34,197,94,.28);
     }
+    .btn.social{
+      background: linear-gradient(135deg, rgba(245,158,11,.95), rgba(245,158,11,.65));
+      color:#2a1700;border-color:rgba(245,158,11,.25);
+    }
+
     .miniTitle{margin:0 0 8px;font-size:16px}
     .muted{color:var(--muted)}
-    .grid3{
-      display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;
+    .note{
+      margin-top:14px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px dashed rgba(11,18,32,.18);
+      background: linear-gradient(135deg, rgba(245,158,11,.10), rgba(37,99,235,.08));
+      color:var(--muted);
     }
-    section{padding:18px 0}
-    .secHead{
-      display:flex; align-items:end; justify-content:space-between; gap:12px;
-      margin:10px 0 12px;
-    }
+
+    /* sections */
+    section{padding:16px 0}
+    .secHead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:6px 0 10px}
     .secHead h2{margin:0;font-size:22px}
     .secHead p{margin:0;color:var(--muted);font-size:14px}
-    .list{
-      margin:0; padding-left:18px; color:var(--muted);
-    }
-    .product{
-      display:flex; flex-direction:column; gap:8px;
-    }
-    .product b{font-size:16px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
     .badge{
       display:inline-flex;
       padding:6px 10px;
       border-radius:999px;
-      background:rgba(124,58,237,.16);
-      border:1px solid rgba(124,58,237,.35);
-      color:#dcd1ff;
+      background: rgba(34,197,94,.15);
+      border:1px solid rgba(34,197,94,.25);
+      color:#0f5132;
       font-size:12px;
+      font-weight:700;
       width:max-content;
     }
-    .split{
-      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
-    }
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
     iframe{
       width:100%;
       border:0;
       border-radius: var(--r);
       min-height:320px;
-      background:#0a0f1c;
-    }
-    .footer{
-      padding:26px 0 36px;
-      color:var(--muted);
-      border-top:1px solid var(--line);
-      margin-top:18px;
-      font-size:13px;
-    }
-    .note{
-      margin-top:10px;
-      padding:12px 14px;
-      border-radius:12px;
-      border:1px dashed rgba(255,255,255,.18);
-      color:var(--muted);
-      background: rgba(255,255,255,.03);
+      background:#fff;
     }
 
-    /* Responsive */
+    footer{
+      margin-top:14px;
+      border-top:1px solid var(--line);
+      padding:18px 0 34px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+
+    /* responsive */
     @media (max-width: 900px){
-      .heroGrid{grid-template-columns:1fr}
+      .hero{grid-template-columns:1fr}
       h1{font-size:34px}
       .grid3{grid-template-columns:1fr}
       .split{grid-template-columns:1fr}
-      .menu{justify-content:flex-start}
     }
   </style>
 </head>
 
 <body>
-  <!-- Sticky header -->
   <div class="topbar">
     <div class="wrap">
       <div class="nav">
         <div class="brand">
           <b>ABHI INDUSTRIES</b>
-          <small>FSSAI-approved | Brand: VISWA</small>
+          <small>Manufacturer of VISWA Packaged Drinking Water</small>
         </div>
         <nav class="menu">
           <a href="#about">About</a>
           <a href="#products">Products</a>
-          <a href="#process">Quality Process</a>
+          <a href="#quality">Quality</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
     </div>
   </div>
 
-  <!-- HERO -->
-  <header class="hero">
+  <header>
     <div class="wrap">
-      <div class="heroGrid">
+      <div class="hero">
         <div class="card">
-          <h1>Pure & Hygienic Packaged Drinking Water</h1>
-          <p class="tagline">
-            ABHI INDUSTRIES manufactures and supplies safe drinking water under our brand <b>VISWA</b>.
-            Serving Warangal with quality, hygiene, and reliable delivery.
+          <h1>Pure. Safe. Refreshing.</h1>
+          <p class="tag">
+            ABHI INDUSTRIES is a FSSAI-approved packaged drinking water manufacturer in Warangal, Telangana.
+            Our brand <b>VISWA</b> delivers hygienically packed, mineral-balanced water for homes, offices, and events.
           </p>
 
           <div class="btnRow">
             <a class="btn primary" href="tel:+919160309475">Call: 9160309475</a>
-            <a class="btn accent" target="_blank" rel="noopener"
-               href="https://wa.me/919160309475?text=Hello%20ABHI%20INDUSTRIES%2C%20I%20want%20to%20place%20a%20water%20order.%20Please%20share%20pricing%20and%20delivery%20details.">
+            <a class="btn whatsapp" target="_blank" rel="noopener"
+               href="https://wa.me/919160309475?text=Hello%20ABHI%20INDUSTRIES%2C%20I%20want%20to%20place%20a%20VISWA%20water%20order.%20Please%20share%20pricing%20and%20delivery%20details.">
               WhatsApp Order
             </a>
-            <a class="btn" href="#contact">Get Directions</a>
+            <a class="btn social" href="#social">Follow Us</a>
           </div>
 
-          <div class="pillRow" aria-label="highlights">
+          <div class="pillRow">
             <span class="pill">RO + UV Purification</span>
+            <span class="pill">Ozonation</span>
             <span class="pill">Hygienic Sealed Packaging</span>
-            <span class="pill">250ml • 500ml • 1L • 20L</span>
-            <span class="pill">Bulk Orders & Subscriptions</span>
+            <span class="pill">250ml • 500ml • 1L</span>
           </div>
 
           <div class="note">
-            <b>Business Hours:</b> Monday–Saturday, 9:00 AM – 6:00 PM
+            <b>Working Hours:</b> Monday – Saturday | 9:00 AM – 6:00 PM
           </div>
         </div>
 
-        <!-- Image / Logo placeholder -->
         <div class="card">
-          <p class="miniTitle">Add your visuals here</p>
+          <p class="miniTitle">Add your Logo & Photos</p>
           <p class="muted">
-            Replace this section with your bottle photo / logo (VISWA) and factory images.
-            On Wix you upload easily, but in coded site you just swap an image file.
+            When you’re ready, add your VISWA logo and bottle/factory photos here.
           </p>
-
-          <!-- Optional: add your image later -->
-          <!-- <img src="viswa-bottle.jpg" alt="VISWA Packaged Drinking Water Bottle" style="width:100%;border-radius:18px;border:1px solid rgba(255,255,255,.10);" /> -->
-
           <div class="note">
-            <b>Tip:</b> Use 3–5 high-quality images: bottle, 20L can, plant, purification unit, delivery vehicle.
+            <b>Quick Tip:</b> Use 3–5 images: bottle, plant, purification unit, packing line, delivery/dispatch.
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="wrap">
       <div class="secHead">
         <div>
-          <h2>About ABHI INDUSTRIES</h2>
-          <p>Manufacturer of packaged drinking water (Brand: VISWA)</p>
+          <h2>About Us</h2>
+          <p>Quality water solutions for a healthier life</p>
         </div>
       </div>
 
@@ -247,92 +240,81 @@
         <div class="card">
           <span class="badge">FSSAI Approved</span>
           <p class="muted" style="margin-top:10px">
-            ABHI INDUSTRIES is a packaged drinking water manufacturing and supply company based in
-            <b>Gorrekunta, Warangal, Telangana</b>. We focus on purity, hygiene, and consistent quality,
-            supplying bottled water and 20L cans for homes, offices, institutions, and events.
+            ABHI INDUSTRIES manufactures packaged drinking water under the brand <b>VISWA</b>.
+            We focus on purity, safety, and consistent quality for customers across Warangal.
+          </p>
+          <p class="muted" style="margin-top:10px">
+            <b>Managing Director:</b> Abhishek Papani
           </p>
         </div>
 
         <div class="card">
           <p class="miniTitle">Vision & Mission</p>
-          <ul class="list">
-            <li><b>Vision:</b> Become a trusted water manufacturer known for quality and integrity.</li>
-            <li><b>Mission:</b> Deliver safe, hygienic, and great-tasting drinking water with reliable service.</li>
+          <ul>
+            <li><b>Vision:</b> To be a trusted water manufacturer known for quality and integrity.</li>
+            <li><b>Mission:</b> To deliver safe, hygienic drinking water with reliable service.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS -->
   <section id="products">
     <div class="wrap">
       <div class="secHead">
         <div>
           <h2>Products</h2>
-          <p>Available in all popular pack sizes</p>
+          <p>VISWA packaged bottles</p>
         </div>
       </div>
 
       <div class="grid3">
-        <div class="card product">
+        <div class="card">
           <b>250 ml Bottles</b>
-          <span class="muted">Perfect for events, travel, and functions</span>
+          <div class="muted">Ideal for events, travel & functions</div>
         </div>
-        <div class="card product">
+        <div class="card">
           <b>500 ml Bottles</b>
-          <span class="muted">Daily hydration for retail & distribution</span>
+          <div class="muted">Perfect for daily hydration & retail</div>
         </div>
-        <div class="card product">
+        <div class="card">
           <b>1 Liter Bottles</b>
-          <span class="muted">Family use, outdoor and bulk consumption</span>
+          <div class="muted">Great for family use & bulk consumption</div>
         </div>
-      </div>
-
-      <div style="height:14px"></div>
-
-      <div class="card">
-        <b>20 Liter Water Cans</b>
-        <p class="muted" style="margin:8px 0 0">
-          Ideal for homes and offices. Monthly plans and regular replacement available.
-          Bulk supply supported for companies, schools, hospitals, and event organizers.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section id="process">
-    <div class="wrap">
-      <div class="secHead">
-        <div>
-          <h2>Purification & Quality Process</h2>
-          <p>Multi-stage purification to ensure safety and freshness</p>
-        </div>
-      </div>
-
-      <div class="grid3">
-        <div class="card"><b>Sand Filtration</b><div class="muted">Removes dust and suspended particles</div></div>
-        <div class="card"><b>Activated Carbon</b><div class="muted">Reduces odor and chemical impurities</div></div>
-        <div class="card"><b>Reverse Osmosis (RO)</b><div class="muted">Removes dissolved impurities</div></div>
-        <div class="card"><b>UV Treatment</b><div class="muted">Protects against bacteria and viruses</div></div>
-        <div class="card"><b>Ozonation</b><div class="muted">Maintains freshness and safety</div></div>
-        <div class="card"><b>Hygienic Sealing</b><div class="muted">Automated filling and sealed packaging</div></div>
       </div>
 
       <div class="note">
-        <b>Note:</b> You can add your actual process images here (filters, RO plant, UV unit, filling machine).
+        <b>Bulk supply available</b> for offices, events, schools, hospitals and retail shops.
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <section id="quality">
+    <div class="wrap">
+      <div class="secHead">
+        <div>
+          <h2>Purification & Quality</h2>
+          <p>Multi-stage purification for safety and freshness</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="card"><b>Sand Filtration</b><div class="muted">Removes suspended particles</div></div>
+        <div class="card"><b>Activated Carbon</b><div class="muted">Reduces odor & chemicals</div></div>
+        <div class="card"><b>Reverse Osmosis (RO)</b><div class="muted">Removes dissolved impurities</div></div>
+        <div class="card"><b>UV Treatment</b><div class="muted">Protection from bacteria</div></div>
+        <div class="card"><b>Ozonation</b><div class="muted">Keeps water fresh longer</div></div>
+        <div class="card"><b>Hygienic Filling</b><div class="muted">Automated sealing & packaging</div></div>
+      </div>
+    </div>
+  </section>
+
   <section id="contact">
     <div class="wrap">
       <div class="secHead">
         <div>
           <h2>Contact & Location</h2>
-          <p>Call/WhatsApp for bulk orders, subscriptions, and pricing</p>
+          <p>Call/WhatsApp for pricing and orders</p>
         </div>
       </div>
 
@@ -346,27 +328,30 @@
             Telangana – 506002
           </p>
 
-          <div style="height:12px"></div>
-
-          <p class="muted" style="margin:0">
+          <p class="muted" style="margin:10px 0 0">
             <b>Phone & WhatsApp:</b> <a href="tel:+919160309475">+91 9160309475</a><br/>
             <b>Hours:</b> Mon–Sat, 9:00 AM – 6:00 PM
           </p>
 
-          <div class="btnRow" style="margin-top:16px">
+          <div class="btnRow" style="margin-top:14px">
             <a class="btn primary" href="tel:+919160309475">Call Now</a>
-            <a class="btn accent" target="_blank" rel="noopener"
-               href="https://wa.me/919160309475?text=Hello%20ABHI%20INDUSTRIES%2C%20I%20want%20to%20place%20a%20water%20order.%20Please%20share%20pricing%20and%20delivery%20details.">
+            <a class="btn whatsapp" target="_blank" rel="noopener"
+               href="https://wa.me/919160309475?text=Hello%20ABHI%20INDUSTRIES%2C%20I%20want%20to%20place%20a%20VISWA%20water%20order.%20Please%20share%20pricing%20and%20delivery%20details.">
               WhatsApp
             </a>
           </div>
 
-          <div class="note">
-            <b>Tip:</b> Once you add Google Business Profile, replace the map with your real pinned location link.
+          <div id="social" class="note">
+            <b>Follow Us:</b><br/><br/>
+            <a class="btn social" target="_blank" rel="noopener"
+               href="https://www.instagram.com/abhi_industries_?igsh=ejB6cGZxbTdoY3Ny">Instagram</a>
+            <a class="btn social" target="_blank" rel="noopener"
+               href="https://www.linkedin.com/in/abhishek-papani-002a0b227/">LinkedIn</a>
+            <a class="btn social" target="_blank" rel="noopener"
+               href="https://www.youtube.com/channel/UCEa488xgD45MktMyfwLNruA">YouTube</a>
           </div>
         </div>
 
-        <!-- Map Embed -->
         <div class="card" style="padding:12px">
           <iframe
             loading="lazy"
@@ -379,11 +364,9 @@
     </div>
   </section>
 
-  <div class="footer">
-    <div class="wrap">
-      © <span id="yr"></span> ABHI INDUSTRIES. All rights reserved. | Brand: VISWA
-    </div>
-  </div>
+  <footer>
+    © <span id="yr"></span> ABHI INDUSTRIES | Brand: VISWA
+  </footer>
 
   <script>
     document.getElementById("yr").textContent = new Date().getFullYear();
