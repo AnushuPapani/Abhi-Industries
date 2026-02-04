@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="ABHI INDUSTRIES is an FSSAI-approved packaged drinking water manufacturer in Warangal, Telangana. Brand: VISWA. 250ml, 500ml, 1L bottles & 20L cans. Call/WhatsApp: 9160309475." />
+  <title>ABHI INDUSTRIES | Packaged Drinking Water (VISWA) | Warangal</title>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eaf0ff;
+      --muted:#b9c6ea;
+      --accent:#7c3aed;
+      --accent2:#fbbf24;
+      --line:rgba(255,255,255,.10);
+      --max:1100px;
+      --r:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(124,58,237,.25), transparent 60%),
+                  radial-gradient(900px 500px at 90% 20%, rgba(251,191,36,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 0;
+      gap:12px;
+    }
+    .brand{
+      display:flex; flex-direction:column; gap:2px;
+    }
+    .brand b{letter-spacing:.4px}
+    .brand small{color:var(--muted)}
+    .menu{
+      display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end;
+      font-size:14px; color:var(--muted);
+    }
+    .menu a{padding:8px 10px;border-radius:999px}
+    .menu a:hover{background:rgba(255,255,255,.06);color:var(--text)}
+    .hero{
+      padding:54px 0 28px;
+    }
+    .heroGrid{
+      display:grid; grid-template-columns: 1.2fr .8fr; gap:18px;
+      align-items:stretch;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius: var(--r);
+      padding:22px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    h1{margin:0 0 10px;font-size:40px;line-height:1.1}
+    .tagline{color:var(--muted);font-size:16px;margin:0 0 18px}
+    .pillRow{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 0}
+    .pill{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:13px;
+    }
+    .btnRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      font-weight:600;
+    }
+    .btn:hover{background:rgba(255,255,255,.10)}
+    .btn.primary{
+      background: linear-gradient(135deg, rgba(124,58,237,.95), rgba(124,58,237,.55));
+      border-color: rgba(124,58,237,.65);
+    }
+    .btn.primary:hover{filter:brightness(1.07)}
+    .btn.accent{
+      background: linear-gradient(135deg, rgba(251,191,36,.95), rgba(251,191,36,.45));
+      border-color: rgba(251,191,36,.65);
+      color:#1b1202;
+    }
+    .miniTitle{margin:0 0 8px;font-size:16px}
+    .muted{color:var(--muted)}
+    .grid3{
+      display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;
+    }
+    section{padding:18px 0}
+    .secHead{
+      display:flex; align-items:end; justify-content:space-between; gap:12px;
+      margin:10px 0 12px;
+    }
+    .secHead h2{margin:0;font-size:22px}
+    .secHead p{margin:0;color:var(--muted);font-size:14px}
+    .list{
+      margin:0; padding-left:18px; color:var(--muted);
+    }
+    .product{
+      display:flex; flex-direction:column; gap:8px;
+    }
+    .product b{font-size:16px}
+    .badge{
+      display:inline-flex;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(124,58,237,.16);
+      border:1px solid rgba(124,58,237,.35);
+      color:#dcd1ff;
+      font-size:12px;
+      width:max-content;
+    }
+    .split{
+      display:grid; grid-template-columns: 1fr 1fr; gap:14px;
+    }
+    iframe{
+      width:100%;
+      border:0;
+      border-radius: var(--r);
+      min-height:320px;
+      background:#0a0f1c;
+    }
+    .footer{
+      padding:26px 0 36px;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      margin-top:18px;
+      font-size:13px;
+    }
+    .note{
+      margin-top:10px;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px dashed rgba(255,255,255,.18);
+      color:var(--muted);
+      background: rgba(255,255,255,.03);
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .heroGrid{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .grid3{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .menu{justify-content:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sticky header -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand">
+          <b>ABHI INDUSTRIES</b>
+          <small>FSSAI-approved | Brand: VISWA</small>
+        </div>
+        <nav class="menu">
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#process">Quality Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="heroGrid">
+        <div class="card">
+          <h1>Pure & Hygienic Packaged Drinking Water</h1>
+          <p class="tagline">
+            ABHI INDUSTRIES manufactures and supplies safe drinking water under our brand <b>VISWA</b>.
+            Serving Warangal with quality, hygiene, and reliable delivery.
+          </p>
+
+          <div class="btnRow">
+            <a class="btn primary" href="tel:+919160309475">Call: 9160309475</a>
+            <a class="btn accent" target="_blank" rel="noopener"
+               href="https://wa.me/919160309475?text=Hello%20ABHI%20INDUSTRIES%2C%20I%20want%20to%20place%20a%20water%20order.%20Please%20share%20pricing%20and%20delivery%20details.">
+              WhatsApp Order
+            </a>
+            <a class="btn" href="#contact">Get Directions</a>
+          </div>
+
+          <div class="pillRow" aria-label="highlights">
+            <span class="pill">RO + UV Purification</span>
+            <span class="pill">Hygienic Sealed Packaging</span>
+            <span class="pill">250ml • 500ml • 1L • 20L</span>
+            <span class="pill">Bulk Orders & Subscriptions</span>
+          </div>
+
+          <div class="note">
+            <b>Business Hours:</b> Monday–Saturday, 9:00 AM – 6:00 PM
+          </div>
+        </div>
+
+        <!-- Image / Logo placeholder -->
+        <div class="card">
+          <p class="miniTitle">Add your visuals here</p>
+          <p class="muted">
+            Replace this section with your bottle photo / logo (VISWA) and factory images.
+            On Wix you upload easily, but in coded site you just swap an image file.
+          </p>
+
+          <!-- Optional: add your image later -->
+          <!-- <img src="viswa-bottle.jpg" alt="VISWA Packaged Drinking Water Bottle" style="width:100%;border-radius:18px;border:1px solid rgba(255,255,255,.10);" /> -->
+
+          <div class="note">
+            <b>Tip:</b> Use 3–5 high-quality images: bottle, 20L can, plant, purification unit, delivery vehicle.
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="secHead">
+        <div>
+          <h2>About ABHI INDUSTRIES</h2>
+          <p>Manufacturer of packaged drinking water (Brand: VISWA)</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="card">
+          <span class="badge">FSSAI Approved</span>
+          <p class="muted" style="margin-top:10px">
+            ABHI INDUSTRIES is a packaged drinking water manufacturing and supply company based in
+            <b>Gorrekunta, Warangal, Telangana</b>. We focus on purity, hygiene, and consistent quality,
+            supplying bottled water and 20L cans for homes, offices, institutions, and events.
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="miniTitle">Vision & Mission</p>
+          <ul class="list">
+            <li><b>Vision:</b> Become a trusted water manufacturer known for quality and integrity.</li>
+            <li><b>Mission:</b> Deliver safe, hygienic, and great-tasting drinking water with reliable service.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="wrap">
+      <div class="secHead">
+        <div>
+          <h2>Products</h2>
+          <p>Available in all popular pack sizes</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="card product">
+          <b>250 ml Bottles</b>
+          <span class="muted">Perfect for events, travel, and functions</span>
+        </div>
+        <div class="card product">
+          <b>500 ml Bottles</b>
+          <span class="muted">Daily hydration for retail & distribution</span>
+        </div>
+        <div class="card product">
+          <b>1 Liter Bottles</b>
+          <span class="muted">Family use, outdoor and bulk consumption</span>
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+
+      <div class="card">
+        <b>20 Liter Water Cans</b>
+        <p class="muted" style="margin:8px 0 0">
+          Ideal for homes and offices. Monthly plans and regular replacement available.
+          Bulk supply supported for companies, schools, hospitals, and event organizers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="secHead">
+        <div>
+          <h2>Purification & Quality Process</h2>
+          <p>Multi-stage purification to ensure safety and freshness</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="card"><b>Sand Filtration</b><div class="muted">Removes dust and suspended particles</div></div>
+        <div class="card"><b>Activated Carbon</b><div class="muted">Reduces odor and chemical impurities</div></div>
+        <div class="card"><b>Reverse Osmosis (RO)</b><div class="muted">Removes dissolved impurities</div></div>
+        <div class="card"><b>UV Treatment</b><div class="muted">Protects against bacteria and viruses</div></div>
+        <div class="card"><b>Ozonation</b><div class="muted">Maintains freshness and safety</div></div>
+        <div class="card"><b>Hygienic Sealing</b><div class="muted">Automated filling and sealed packaging</div></div>
+      </div>
+
+      <div class="note">
+        <b>Note:</b> You can add your actual process images here (filters, RO plant, UV unit, filling machine).
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="secHead">
+        <div>
+          <h2>Contact & Location</h2>
+          <p>Call/WhatsApp for bulk orders, subscriptions, and pricing</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="card">
+          <p class="miniTitle">ABHI INDUSTRIES</p>
+          <p class="muted" style="margin:6px 0 0">
+            <b>Address:</b><br/>
+            Flat No.: 45-7-1370,<br/>
+            Gorrekunta, Warangal,<br/>
+            Telangana – 506002
+          </p>
+
+          <div style="height:12px"></div>
+
+          <p class="muted" style="margin:0">
+            <b>Phone & WhatsApp:</b> <a href="tel:+919160309475">+91 9160309475</a><br/>
+            <b>Hours:</b> Mon–Sat, 9:00 AM – 6:00 PM
+          </p>
+
+          <div class="btnRow" style="margin-top:16px">
+            <a class="btn primary" href="tel:+919160309475">Call Now</a>
+            <a class="btn accent" target="_blank" rel="noopener"
+               href="https://wa.me/919160309475?text=Hello%20ABHI%20INDUSTRIES%2C%20I%20want%20to%20place%20a%20water%20order.%20Please%20share%20pricing%20and%20delivery%20details.">
+              WhatsApp
+            </a>
+          </div>
+
+          <div class="note">
+            <b>Tip:</b> Once you add Google Business Profile, replace the map with your real pinned location link.
+          </div>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="card" style="padding:12px">
+          <iframe
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Flat%20No.%3A%2045-7-1370%2C%20Gorrekunta%2C%20Warangal%2C%20Telangana%20506002&output=embed"
+            aria-label="Google map location for ABHI INDUSTRIES">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="wrap">
+      © <span id="yr"></span> ABHI INDUSTRIES. All rights reserved. | Brand: VISWA
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
